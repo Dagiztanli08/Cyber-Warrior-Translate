@@ -21,10 +21,11 @@ baslangic()
 sleep(0.3)
 
 m = sqlite3.connect("ceviri.db")
+m.cursor().execute("CREATE TABLE IF NOT EXISTS EMRE('kelime','ceviri')")
+
 
 def veri_ekle(value1,value2):
     m_2 = m.cursor()
-    m_2.execute("CREATE TABLE IF NOT EXISTS EMRE('kelime','ceviri')")
     m_2.execute("INSERT INTO EMRE(kelime,ceviri) SELECT '{}','{}' WHERE NOT EXISTS(SELECT * FROM EMRE WHERE kelime = '{}' AND ceviri = '{}')".format(a,c,a,c))
     m.commit()
 def veri_cekme(value_1):

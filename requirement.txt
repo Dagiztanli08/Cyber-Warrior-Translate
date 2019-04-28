@@ -1,0 +1,4 @@
+googletrans
+pyperclip
+
+#Kullanılan diğer modüller python içerisinde mevcuttur.

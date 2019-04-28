@@ -11,8 +11,9 @@ OFFLİNE-ONLİNE
     TRANSLATOR.
         CODED FOR CYBER-WARRİOR
             DAĞIZTANLI08.
-    Eğer cümle kopyalarsanız cevap vermiyecektir.
-
+   
+! (Eğer cümle kopyalarsanız cevap vermiyecektir(sadece kelime))
+! (if you copy sentence this program doesn't answer.(only word)).
 Twitter = 08Ztanl
 """)
 

@@ -49,7 +49,7 @@ while True:
             try:
                 c = Translator().translate(a,dest='tr').text
                 if osnames == "posix":
-                    s_1 = check_call("notify-send {} {}".format(a,c), shell = True) 
+                    s_1 = check_call("notify-send '{}' '{}'".format(a,c), shell = True) 
                 print("{} == {}  /////// İnternet kullanıldı".format(a,c))
                 veri_ekle(a,c)
             except __import__('requests').exceptions.ConnectionError:
